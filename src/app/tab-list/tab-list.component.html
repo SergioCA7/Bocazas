@@ -1,0 +1,29 @@
+<div *ngIf = "found">
+  <ul style="list-style-type: none;">
+    <li *ngFor="let alert of alerts">
+      <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="alert">
+        <ngb-panel id="alert" >
+        <ng-template ngbPanelTitle>
+            <span><b>{{ alert.alertTypeMessage }}</b></span>
+        </ng-template>
+          <ng-template ngbPanelContent>
+            <div class="row">
+              <div class="col-sm-2">
+                <img src="{{alert.urlIcon}}" style="height:100px;width:100px;padding:5px;"/>
+              </div>
+              <div class="col-sm-5" style="margin:auto;">
+                {{alert.message}}<br>
+              <br><i style="color:#0275d8">Verifications: {{alert.verifications}}</i>
+            </div>
+            <div class="col-sm-5" style="margin:auto; text-align: center">
+                <!-- <input onclick="sendVerifications({{alert.idAlert}})" type="submit" value="VERIFY" style="font-size:25px; font-family:Impact;color: white; background-color: #0B6121" class="button--wayra"> -->
+                <button (click)="sendVerifications(  alert.idAlert )" style="font-size:25px; font-family:Impact;color: white; background-color: #0B6121"  > VERIFY </button>
+            </div>
+          </div>
+          </ng-template>
+        </ngb-panel>
+
+       </ngb-accordion>
+    </li>
+  </ul>
+  </div>

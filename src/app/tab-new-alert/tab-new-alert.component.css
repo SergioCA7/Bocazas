@@ -1,0 +1,113 @@
+input#staticControl[type=checkbox] + label{
+	background-image: url("/../../assets/IconosAlertas/ControlPolicial-transparent.png");
+	border-color: white;
+	border-style: solid;
+	background-size:100%;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+}
+input#staticControl[type=checkbox]:checked + label{
+	border-color: #0B6121;
+	border-style: solid;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+	display:inline-block;
+	padding: 0 0 0 0px;
+}
+
+/* Selected Alert */
+input[type=checkbox] {
+	display:none;
+}
+
+/*staticRadar*/
+input#staticRadar[type=checkbox] + label{
+	background-image: url("/../../assets/IconosAlertas/RadarMovil-trans.png");
+	border-color: white;
+	border-style: solid;
+	background-size:100%;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+}
+input#staticRadar[type=checkbox]:checked + label{
+	border-color: #0B6121;
+	border-style: solid;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+	display:inline-block;
+	padding: 0 0 0 0px;
+}
+
+/*hercules*/
+input#hercules[type=checkbox] + label{
+	background-image: url("/../../assets/IconosAlertas/Helicoptero-trans.png");
+	border-color: white;
+	border-style: solid;
+	background-size:100%;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+}
+input#hercules[type=checkbox]:checked + label{
+	border-color: #0B6121;
+	border-style: solid;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+	display:inline-block;
+	padding: 0 0 0 0px;
+}
+
+/*movilRadar*/
+input#movilRadar[type=checkbox] + label{
+	background-image: url("/../../assets/IconosAlertas/RadarCochePolicia-transparent.png");
+	border-color: white;
+	border-style: solid;
+	background-size:100%;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+}
+input#movilRadar[type=checkbox]:checked + label{
+	border-color: #0B6121;
+	border-style: solid;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+	display:inline-block;
+	padding: 0 0 0 0px;
+}
+
+/*staticControl*/
+input#staticControl[type=checkbox] + label{
+	background-image: url("/../../assets/IconosAlertas/ControlPolicial-transparent.png");
+	border-color: white;
+	border-style: solid;
+	background-size:100%;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+}
+input#staticControl[type=checkbox]:checked + label{
+	border-color: #0B6121;
+	border-style: solid;
+	height:100px;
+	width:100px;
+	margin:100px 50px 50px 50px;
+	middle: true;
+	display:inline-block;
+	padding: 0 0 0 0px;
+}

@@ -1,0 +1,36 @@
+<div style="text-align: center">
+  <form #alertForm="ngForm" (ngSubmit)="saveAlert(alertForm)">
+      <br>
+      <div class="alert alert-danger" *ngIf=""></div>
+      <br><br>
+    </form>
+    <form  [formGroup]="myGroup" (ngSubmit)="sendNewAlert()">
+      <label class="hvr-radial-out">
+        <input type="checkbox" name='staticControl'value="staticControl" id="staticControl"><label for="staticControl"></label>
+      </label>
+      <label class="hvr-radial-out">
+        <input type="checkbox" name='movilRadar'  value="movilRadar" id="movilRadar"><label for="movilRadar"></label>
+      </label>
+      <label class="hvr-radial-out">
+        <input type="checkbox" name='staticRadar' value="staticRadar" id="staticRadar"><label for="staticRadar"></label>
+      </label>
+      <label class="hvr-radial-out">
+        <input type="checkbox" name='hercules' value="hercules" id="hercules"><label for="hercules"></label>
+      </label>
+      <br>
+      <select name="selectAlert" id="selectAlert" style="width:200px;text-align:center" formControlName="alert_type" ng-model="data.selectAlert">
+        <option value="">---Please select---</option>
+        <option value="1">Police Control</option>
+        <option value="2">Radar in Police Car</option>
+        <option value="3">Mobile Radar</option>
+        <option value="4">Helicopter</option>
+      </select>
+      <br><br>
+      <div class="alert alert-danger" *ngIf=""></div>
+
+      <div class="form-group">
+          <input ngModel type="message_new" [(ngModel)]="message_new" name="message_new" placeholder="Enter your alert" class="md-textarea" formControlName="message_new" style="display:block;width:100%">
+      </div>
+    <button type="submit" style="font-size:25px; font-family:Impact;color: white; background-color: #0B6121">ADD ALERT</button>
+  </form>
+  </div>

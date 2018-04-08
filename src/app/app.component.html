@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="jumbotron" style="background-color:#0B6121">
+		<div style="text-align:center">
+		<h1><img style="width:700px;height:400px;" src="../assets/images/logobocazas.png"></h1>
+	</div>
+	</div>
+	<div class="container">
+		<ngb-tabset [justify]="currentJustify">
+			<ngb-tab>
+				<ng-template ngbTabTitle><h1 style="font-family:Impact"><b><a  (click)="refresh()">Alert List</a><span class="fa fa-bell"></span></b></h1></ng-template>
+				<ng-template ngbTabContent>
+					<app-tab-list></app-tab-list>
+					<br>
+				</ng-template>
+			</ngb-tab>
+			<ngb-tab>
+				<ng-template ngbTabTitle><h1 style="font-family:Impact"><b>New Alert <span class="fa fa-pencil"></span></b></h1></ng-template>
+				<ng-template ngbTabContent>
+						<app-tab-new-alert></app-tab-new-alert>
+				</ng-template>
+			</ngb-tab>
+		</ngb-tabset>
+	</div>
+	<br>
+</div>
